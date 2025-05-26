@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/imageAvatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/afd01824994ba70cf4f2eaf789f4a459"
+        android:contentDescription="Avatar"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rodrigo Leiva Cheik Ali"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        app:layout_constraintTop_toBottomOf="@id/imageAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="337dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:text="Soy un estudiante entusiasta con ganas de crecer y adquirir experiencia, listo para ofrecer soluciones que puedan ser necesarias. Me adapto con facilidad y aprendo rápido.
+Tengo conocimientos de Java y SQL, así como de otros lenguajes de programación, incluyendo desarrollo web con ASP.NET. He trabajado con GitHub  y me desenvuelvo en un entorno de equipo, destacando por mi responsabilidad y compromiso con los objetivos del grupo"
+        android:textAlignment="center"
+        android:textColor="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNombre" />
+
+    <Button
+        android:id="@+id/btnVerMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Ver más información"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDescripcion" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
